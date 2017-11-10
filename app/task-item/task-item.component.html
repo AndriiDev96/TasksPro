@@ -1,0 +1,11 @@
+<div class="task-item"  [ngClass]="{ 'completed': task.completed}">        <!--*ngFor структурна деректива яка змінює структуру дом   ngClass атрибутна деректива-->
+    <button class="checkbox icon" (click)="onToggle()">
+        <i class="material-icons">{{ task.completed ? 'check_box' : 'check_box_outline_blank' }}</i>
+    </button>
+    <span class="title">{{ task.title }}</span>
+    <div class="actions">
+        <button class="delete icon" (click)="onDelete()">
+            <i class="material-icons">delete</i>
+        </button>
+    </div>
+</div>

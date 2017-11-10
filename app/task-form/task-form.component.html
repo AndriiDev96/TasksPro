@@ -1,0 +1,5 @@
+<form  class="task-form" (ngSubmit)="onSubmit() ; taskForm.reset()" #taskForm="ngForm">    <!-- $event для передачі події-->
+    <input type="text" name="title" [(ngModel)] = "title"  placeholder="Що потрібно зробити?" required>   <!-- #titleInput локальна змінна, щоб получити доступ до цього поля, щоб зробити поле обов'язковим required-->
+    <button type="submit" [disabled]="taskForm.form.invalid" >Добавити</button>
+</form>
+<!--- # - локальна зміннна (Наприклад #taskForm )-->
