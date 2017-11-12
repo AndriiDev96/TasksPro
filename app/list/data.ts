@@ -1,4 +1,4 @@
-import { InMemoryDbService } from 'angular-in-memory-web-api';
+﻿import { InMemoryDbService } from 'angular-in-memory-web-api';
 
 export class InMemoryDataService implements InMemoryDbService{
     createDb(){
@@ -18,6 +18,12 @@ export class InMemoryDataService implements InMemoryDbService{
             title: 'Написать приложение',
             completed: false
         },
+	{
+            id:4,
+            title: 'Learn Promises in JavaScript',
+            completed: false
+        },
+	
     ];
     return {tasks};
 }
